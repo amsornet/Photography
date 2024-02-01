@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: "Josefin Sans", sans-serif;
+  src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../fonts/Poppins/Poppins-Black.ttf);
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.page__body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--bg);
+}
+:root {
+  --bg: #1f2022;
+  --main: #eee;
+  --light-text: #fff;
+  --color-second: #00adb5;
+
+  --font-family: "Josefin Sans", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Poppins", sans-serif;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.container {
+  max-width: 1382px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav__link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: #eee;
+}
+
+@media (any-hover: hover) {
+  .nav-link {
+    color: var(--color-second);
+  }
+}
+.nav_link--active {
+  color: var(--color-second);
+}
+
+.nav-link:focus {
+  outline: none;
+}
+
+.nav__link:focus-visible {
+  outline: 2px dashed var(--color-second);
+  outline-offset: 3px;
+}
+
+.hero {
+  background-image: url(../img/bg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
