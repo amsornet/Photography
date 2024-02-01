@@ -1,0 +1,9 @@
+@media (max-width: 1024px) {
+  .hero {
+    background-position: left -165px bottom;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+}
