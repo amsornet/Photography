@@ -18,25 +18,44 @@ img {
 }
 @font-face {
   font-family: "Josefin Sans", sans-serif;
-  src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+  src: url(../fonts/Josefin_Sans/JosefinSansVariableFont_wght.woff2)
+    format("woff2");
   font-display: swap;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat", sans-serif;
-  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat/MontserratVariableFont_wght.woff2)
+    format("woff2");
   font-display: swap;
-  font-weight: 500;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(../fonts/Montserrat/MontserratVariableFont_wght.woff2)
+    format("woff2");
+  font-display: swap;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins", sans-serif;
-  src: url(../fonts/Poppins/Poppins-Black.ttf);
+  src: url(../fonts/Poppins/PoppinsRegular.woff2);
   font-display: swap;
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../fonts/Poppins/PoppinsMedium.woff2);
+  font-display: swap;
+  font-weight: 500;
   font-style: normal;
 }
 body {
@@ -44,7 +63,8 @@ body {
 }
 
 .page__body {
-  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  font-family: var(--font-family);
   background-color: var(--bg);
 }
 :root {
@@ -84,6 +104,10 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  padding: 25px 0;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -101,15 +125,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   color: #eee;
-}
-
-@media (any-hover: hover) {
-  .nav-link {
-    color: var(--color-second);
-  }
-}
-.nav_link--active {
-  color: var(--color-second);
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-link:focus {
@@ -121,6 +137,26 @@ body {
   outline-offset: 3px;
 }
 
+@media (any-hover: hover) {
+  .nav-link:hover {
+    color: var(--color-second);
+  }
+}
+
+.nav_link--active {
+  color: var(--color-second);
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 16px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+
+  background-color: var(--main);
+}
 .hero {
   background-image: url(../img/bg.png);
   background-position: left top;
