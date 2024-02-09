@@ -13,7 +13,25 @@
     grid-template-columns: repeat(6, 1fr);
   }
   .nav {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--bg);
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  .nav--active {
+    transform: none;
+    visibility: visible;
+  }
+  .nav__list {
+    height: 100%;
+    padding: 50px 0;
+    flex-direction: column;
   }
   .burger {
     position: relative;
@@ -34,7 +52,7 @@
     top: 0;
   }
   .burger__line:last-child {
-    top: calc(100% -2px);
+    top: calc(100% - 2px);
   }
   .burger__line:nth-child(2) {
     top: 50%;
@@ -80,6 +98,9 @@
   }
   .hero__descr {
     text-align: center;
+  }
+  .form__btn {
+    height: 40px;
   }
 }
 
