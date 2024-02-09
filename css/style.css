@@ -110,6 +110,9 @@ body {
   margin: 0 auto;
 }
 
+.burger {
+  display: none;
+}
 .header {
   padding: 25px 0;
 }
