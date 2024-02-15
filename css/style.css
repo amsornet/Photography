@@ -338,7 +338,7 @@ body {
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .modal {
@@ -379,5 +379,6 @@ body {
 }
 .modal-parent--open {
   opacity: 1;
-  visibility: visible;
+  /* visibility: visible; */
+  visibility: hidden;
 }
