@@ -380,5 +380,5 @@ body {
 .modal-parent--open {
   opacity: 1;
   /* visibility: visible; */
-  visibility: hidden;
+  visibility: visible;
 }
