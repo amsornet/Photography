@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -70,46 +74,100 @@
                 <a href="#" class="latest-shots__all">View all</a>
               </div>
               <div class="latest-shots__content">
-                <a class="latest-shots__link" href="#" aria-label="Go to shot">
-                  <img
-                    src="img/01.jpg"
-                    srcset="img/01.jpg 3x"
-                    width="250px"
-                    height="150px"
-                    loading="lazy"
-                    alt="Man in mask"
-                    class="latest-shots__image"
-                  />
-                </a>
-
-                <a class="latest-shots__link" href="#" aria-label="Go to shot">
-                  <img
-                    src="img/02.jpg"
-                    srcset="img/02.jpg 3x"
-                    width="250px"
-                    height="150px"
-                    loading="lazy"
-                    alt="Woman in cornfield"
-                    class="latest-shots__image"
-                  />
-                </a>
-
-                <a class="latest-shots__link" href="#" aria-label="Go to shot">
-                  <img
-                    src="img/03.jpg"
-                    srcset="img/03.jpg 3x"
-                    width="250px"
-                    height="150px"
-                    loading="lazy"
-                    alt="Woman rabbit"
-                    class="latest-shots__image"
-                  />
-                </a>
+                <div class="swiper" id="gallery">
+                  <div class="swiper-wrapper">
+<!--                    first slide-->
+                    <div class="swiper-slide">
+                      <a class="latest-shots__link" href="#" aria-label="Go to shot">
+                        <img
+                            src="img/01.jpg"
+                            srcset="img/01.jpg 3x"
+                            width="250px"
+                            height="150px"
+                            loading="lazy"
+                            alt="Man in mask"
+                            class="latest-shots__image"
+                        />
+                      </a>
+                    </div>
+<!--                    second slide -->
+                    <div class="swiper-slide">
+                      <a class="latest-shots__link" href="#" aria-label="Go to shot">
+                        <img
+                            src="img/02.jpg"
+                            srcset="img/02.jpg 3x"
+                            width="250px"
+                            height="150px"
+                            loading="lazy"
+                            alt="Woman in cornfield"
+                            class="latest-shots__image"
+                        />
+                      </a>
+                    </div>
+<!--                    third slide -->
+                    <div class="swiper-slide">
+                      <a class="latest-shots__link" href="#" aria-label="Go to shot">
+                        <img
+                            src="img/03.jpg"
+                            srcset="img/03.jpg 3x"
+                            width="250px"
+                            height="150px"
+                            loading="lazy"
+                            alt="Woman rabbit"
+                            class="latest-shots__image"
+                        />
+                      </a>
+                    </div>
+<!--                    forth slide -->
+                    <div class="swiper-slide">
+                      <a class="latest-shots__link" href="#" aria-label="Go to shot">
+                        <img
+                            src="img/01.jpg"
+                            srcset="img/01.jpg 3x"
+                            width="250px"
+                            height="150px"
+                            loading="lazy"
+                            alt="Man in mask"
+                            class="latest-shots__image"
+                        />
+                      </a>
+                    </div>
+                    <!--                    fifth slide -->
+                    <div class="swiper-slide">
+                      <a class="latest-shots__link" href="#" aria-label="Go to shot">
+                        <img
+                            src="img/02.jpg"
+                            srcset="img/02.jpg 3x"
+                            width="250px"
+                            height="150px"
+                            loading="lazy"
+                            alt="Woman in cornfield"
+                            class="latest-shots__image"
+                        />
+                      </a>
+                    </div>
+                    <!--                    sixth slide -->
+                    <div class="swiper-slide">
+                      <a class="latest-shots__link" href="#" aria-label="Go to shot">
+                        <img
+                            src="img/03.jpg"
+                            srcset="img/03.jpg 3x"
+                            width="250px"
+                            height="150px"
+                            loading="lazy"
+                            alt="Woman rabbit"
+                            class="latest-shots__image"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="latest-shots__nav">
                 <button
-                  class="btn-reset latest-shots__btn"
-                  aria-label="Slide-left"
+                  class="btn-reset latest-shots__btn latest-shots__btn--left"
+                  aria-label="Slide-left" id="gallery-prev"
                 >
                   <svg
                     width="26"
@@ -126,7 +184,7 @@
                 </button>
                 <button
                   class="btn-reset latest-shots__btn latest-shots__btn--right"
-                  aria-label="Slide right"
+                  aria-label="Slide right" id="gallery-next"
                 >
                   <svg
                     width="26"
@@ -165,6 +223,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

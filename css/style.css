@@ -266,6 +266,7 @@ body {
 }
 
 .hero__shots {
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -293,8 +294,8 @@ body {
 }
 
 .latest-shots__content {
-  display: flex;
-  gap: 20px;
+  /*display: flex;*/
+  /*gap: 20px;*/
   margin-bottom: 20px;
   overflow: hidden;
   width: calc(100% + 86px);
